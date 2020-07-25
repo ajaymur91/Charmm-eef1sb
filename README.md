@@ -25,6 +25,7 @@ tleap
 ```
 # Create a standalone topology file and a gromacs run file inside run/em.tpr 
 ```
+gmx pdb2gmx -f structure.pdb -ignh
 gmx grompp -f inp_files/em.mdp -c conf.gro -o run/em.tpr -p topol.top -pp run/system.top
 ```
 # Steps to run
