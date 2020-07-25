@@ -36,3 +36,7 @@ gmx mdrun -deffnm em -table ../inp_files/table-eef1-coul.xvg -tablep ../inp_file
 gmx grompp -f ../inp_files/run.mdp -c confout.gro -o run.tpr -p system.top
 gmx mdrun -deffnm run -table ../inp_files/table-eef1-coul.xvg -tablep ../inp_files/table-eef1-coul.xvg -plumed ../inp_files/plumed-eef1.dat 
 ```
+# Credits 
+https://www.plumed.org/doc-v2.5/user-doc/html/isdb-1.html
+https://github.com/sbottaro/EEF1-SB
+Reference: @article{bottaro2013variational, title={Variational optimization of an all-atom implicit solvent force field to match explicit solvent simulation data}, author={Bottaro, Sandro and Lindorff-Larsen, Kresten and Best, Robert B}, journal={Journal of chemical theory and computation}, volume={9}, number={12}, pages={5641--5652}, year={2013}, publisher={ACS Publications} }
